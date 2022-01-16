@@ -1,24 +1,35 @@
 body{
     margin: 0;
 }
-h1 {
-    border-bottom: 1px solid gray;
+
+.navi ol {
+    list-style-type: none;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
 }
-#grid ol{
-    border-right: 1px solid gray;
-    width: 150px;
+
+.navi ol li{
+    float: left;
     margin: 0;
-    padding: 30px;
-    padding-left: 50px;
+    background-color: gray;
 }
-#grid{
-    display: grid;
-    grid-template-columns: 200px 1fr;
+
+.navi ol li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-#article{
-    padding-left: 70px;
+
+.navi ol li a:hover {
+    background-color: #111;
+  }
+
+.active {
+    background-color: #111;
 }
 
 @media(max-width:800px){
