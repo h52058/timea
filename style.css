@@ -1,6 +1,8 @@
 body{
     margin: 0;
+    text-align: center;
 }
+
 
 .navi ol {
     list-style-type: none;
@@ -13,6 +15,7 @@ body{
 .navi ol li{
     float: left;
     margin: 0;
+    border-right: 1px solid #bbb;
     background-color: gray;
 }
 
