@@ -6,26 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFVJZ6SBHE"></script>
-<script>
+    <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-QFVJZ6SBHE');
-</script>
+    </script>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        h1 {
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+        #grid ol{
+            border-right: 1px solid gray;
+            width: 150px;
+            margin: 0;
+            padding: 30px;
+            padding-left: 50px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        }
+        #article{
+            padding-left: 70px;
+        }
+    </style>
 
     <title>커뮤니티</title>
 </head>
-<body>
+
+    <body>
     <h1><a href="index.html"><img src="12.jpg" width="300px"></a></h1>
+    <div id="grid">
+    <ol>
+        <li><a href="https://www.twitch.tv/h52058" target="_black">시간에이 트위치</a></li> 
+        <li><a href="EmmaAug.html">엠마 특성</a></li>
+        <li><a href="EmmaCombo.html">엠마 콤보</a></li>
+        <li><a href="commu.html">건의 사항</a></li>
+    </ol>
+    <div id="article">
 
-<ol>
-    <li><a href="https://www.twitch.tv/h52058" target="_black">시간에이 트위치</a></li> 
-    <li><a href="EmmaAug.html">엠마 특성</a></li>
-    <li><a href="EmmaCombo.html">엠마 콤보</a></li>
-    <li><a href="commu.html">건의 사항</a></li>
-</ol>
-
+    <!-- 댓글 기능 스크립트 -->
     <p>
         <div id="disqus_thread"></div>
     <script>
@@ -49,6 +77,7 @@
     </noscript>
     </p>
 
-    <h1>공백</h1>
+        </div>
+    </div>
 </body>
 </html>
