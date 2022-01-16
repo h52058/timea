@@ -15,16 +15,26 @@
     </script>
     
     <style>
-        a { color: black;
-            text-decoration: none;
-            font-size: 20px;
+        body{
+            margin: 0;
         }
-        .saw {
-            color:gray;
+        h1 {
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;
         }
-        #active{
-            color: red;
+        #grid ol{
+            border-right: 1px solid gray;
+            width: 150px;
+            margin: 0;
+            padding: 30px;
+            padding-left: 50px;
         }
+        #grid{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        }
+
     </style>
 
 
@@ -32,9 +42,8 @@
 </head>
 <body>
     <h1><a href="index.html"><img src="12.jpg" width="300px"></a></h1>
-
+    <div id="grid">
 <ol>
-    <li>상단에 탭으로 만들기</a></li>
     <li><a href="https://www.twitch.tv/h52058" target="_black">시간에이 트위치</a></li> 
     <li><a href="EmmaAug.html" class="saw">엠마 특성</a></li>
     <li><a href="EmmaCombo.html" class="saw" id="active">엠마 콤보</a></li>
