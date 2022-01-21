@@ -4,7 +4,7 @@ body{
 }
 
 
-.navi ol {
+.navi ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -12,34 +12,55 @@ body{
     background-color: gray;
 }
 
-.navi ol li{
+.navi ul li{
     float: left;
     margin: 0;
     border-right: 1px solid #bbb;
     background-color: gray;
 }
 
-.navi ol li a {
-    display: block;
+.navi ul li a {
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.navi ol li a:hover {
-    background-color: #111;
+.navi .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navi .dropdown {
+    display: inline-block;
+}
+
+.navi .dropdowncon {
+    display: none;
+    background-color: gray;
+    position: absolute;
+    min-width: 103px;
+}
+
+.navi .dropdowncon a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navi .dropdown:hover .dropdowncon {
+    display: block;
   }
 
 .active {
     background-color: #111;
 }
 
-@media(max-width:800px){
-    #grid{
-        display: block;
-    }
-    #grid ol{
-    border-right:none;
-}    
+#active {
+    background-color: #111;
 }
