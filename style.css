@@ -90,11 +90,22 @@ body{
     clear: both;
 }
 
-@media screen and (max-width:1650px) {
+@media screen and (max-width:1700px) {
     .col {
         width:100%;
     }
+    img {
+        width:100%;
+        height: auto;
+    }
+    iframe{
+        width:100%;
+        height: auto;
+    }
 }
+
+
+
 
 .active {
     background-color: #111;
