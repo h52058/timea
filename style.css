@@ -3,8 +3,7 @@ body{
     text-align: center;
 }
 
-
-.navi ul {
+.header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -12,14 +11,36 @@ body{
     background-color: gray;
 }
 
-.navi ul li{
+.header ul li {
+    
     float: left;
+}
+
+.header a{
+    float: left;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+}
+
+
+.topnav ul {
+    list-style-type: none;
     margin: 0;
-    border-right: 1px solid #bbb;
+    padding: 0;
+    overflow: hidden;
     background-color: gray;
 }
 
-.navi ul li a {
+.topnav ul li{
+    float: left;
+    margin: 0;
+    background-color: gray;
+}
+
+.topnav ul li a {
     display: inline-block;
     color: white;
     text-align: center;
@@ -27,25 +48,25 @@ body{
     text-decoration: none;
 }
 
-.navi .dropbtn {
+.topnav .dropbtn {
     display: inline-block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.navi .dropdown {
+.topnav .dropdown {
     display: inline-block;
 }
 
-.navi .dropdowncon {
+.topnav .dropdowncon {
     display: none;
     background-color: gray;
     position: absolute;
     min-width: 103px;
 }
 
-.navi .dropdowncon a {
+.topnav .dropdowncon a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -53,9 +74,27 @@ body{
     text-align: left;
 }
 
-.navi .dropdown:hover .dropdowncon {
+.topnav .dropdown:hover .dropdowncon {
     display: block;
   }
+
+.col {
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+
+.doveult:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:1650px) {
+    .col {
+        width:100%;
+    }
+}
 
 .active {
     background-color: #111;
