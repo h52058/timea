@@ -12,7 +12,6 @@ body{
 }
 
 .header ul li {
-    
     float: left;
 }
 
@@ -24,6 +23,7 @@ body{
     padding: 14px 16px;
     color: white;
 }
+
 
 
 .topnav ul {
@@ -48,17 +48,6 @@ body{
     text-decoration: none;
 }
 
-.topnav .dropbtn {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.topnav .dropdown {
-    display: inline-block;
-}
-
 .topnav .dropdowncon {
     display: none;
     background-color: gray;
@@ -78,31 +67,57 @@ body{
     display: block;
   }
 
+
+
 .col {
-    float: left;
-    width: 30%;
     height: auto;
-    padding: 15px;
 }
 
-.doveult:after {
-    content: "";
-    display: table;
-    clear: both;
+.topnava {
+    display: none;
+    float: left;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-@media screen and (max-width:1700px) {
+.topnava img {
+    width: 50px;
+}
+
+.topnav .topnavback{
+    display: none;
+}
+
+
+@media screen and (max-width:780px) {
     .col {
         width:100%;
         height: auto;
     }
     img {
-        width:100%;
+        width: 100%;
+        height: auto;
     }
     iframe{
         width:100%;
-        height: 700px;
+        height:500px;
     }
+    .topnav .topnavul {
+        display: none;
+    }
+    .topnav .topnavback{
+        display: block;
+        background-color: gray;
+    }
+    .topnav .topnavback .topnava {
+        display: block;
+        padding: 0;
+        padding-left: 10px;
+    }
+
 }
 
 

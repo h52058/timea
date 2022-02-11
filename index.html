@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -15,28 +17,36 @@
   gtag('config', 'G-QFVJZ6SBHE');
     </script>
 
-
     <title>시간에이</title>
 </head>
+
+
 <body>
+
 
     <div class="header">
         <ul>
         <li><a href="index.html">메인</a></li>
+        <li><input type="button" value="야간모드" onclick="nightDayhandler(this);">
+            </li>
         </ul>
     </div>
 
     <div class="topnav">
-        <ul>
+        <ul class="topnavback">
+            <li><a href class="topnava"><img src="menu.png"></a></li>
+        </ul>
+
+        <ul class="topnavul">
             <li><a href="https://www.twitch.tv/h52058" target="_blank">시간에이 트위치</a></li> 
             <li><a href="EmmaAug.html">엠마 특성</a></li>
-            <li class="dropdown">
-                <a href="Doveult.html" class="dropbtn">엠마 콤보</a>
-            <div class="dropdowncon">
-                <a href="Doveult.html">비둘기궁</a>
-                <a href="Hatult.html">모자궁</a>
-            </div>
-            </li>
+                <li class="dropdown">
+                    <a href="Doveult.html">엠마 콤보</a>
+                <div class="dropdowncon">
+                    <a href="Doveult.html">비둘기궁</a>
+                    <a href="Hatult.html">모자궁</a>
+                </div>
+                </li>
             <li><a href="Route.html">루트</a></li>
             <li><a href="commu.html">건의 사항</a></li>
             <li><a href="https://www.youtube.com/channel/UCnjKUXhAvCE7Wxzz5mV50SQ" target="_blank">유튜브</a>
@@ -44,8 +54,14 @@
         </ul>
     </div>
 
-    <img src="12.jpg">
+    <br><br><br>
     <h1>시간에이의 엠마 공략 사이트입니다~</h1>
+    <img src="12.jpg">
+    
+
+    <div class="footer">
+        <p></p>
+    </div>
     
 </body>
 </html>
